@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="C:\Users\Deepan\Pictures\PNG\Developer Icon.png" type="image/x-icon">
+    <title>HTML Form</title>
+    <style>
+        html{
+            background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+            height: 100%;
+            }
+        form{
+            background-image: linear-gradient(to right top, #00d3ff, #4cb5ff, #cd7efe);
+            width: 30%;
+            position: relative;
+            font-family: sans-serif;
+            margin-top: 1.7rem;
+            left: 35%;
+            box-shadow: 4px 4px 9px 9px #71616148;
+            font-size: 1vw;
+        }
+        /* img{
+            position: relative;
+            left: 16%;
+        } */
+        label{
+            font-weight: bold;
+            font-size: large;
+            margin-left: 30px;
+        }
+        input{
+            border: 2px solid black;
+            border-radius: 5px;
+            width: 80%;
+            height: 30px;
+            background-color: #13174726;
+            margin-left: 30px;
+            /* border-color: #00000026; */
+            font-size: 15px;
+        }
+        #agree{
+            width: 15px;
+            position: relative;
+            top: 0.5rem;
+        }
+        #agr{
+            margin: 0px;
+        }
+        #pimage{
+            width: 200px;
+            height: 30px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 3px;
+        }
+        #date{
+            width: 30%;
+            text-align: center;
+            margin-top: 3px;
+            height: 34px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        #gender{
+            background-color: #3bbed8;
+            border: 2px solid black;
+            border-radius: 5px;
+            height: 34px;
+            width: 17%;
+            font-weight: bold;
+            margin: 3px;
+            cursor: pointer;
+        }
+        button{
+            width: 35%;
+            padding: 10px 20px;
+            position: relative;
+            left: 13%;
+            text-align: center;
+            margin-left: 5px;
+            font-weight: bold;
+            border: 1px solid #009dff;
+            border-radius: 5px;
+            cursor: pointer;
+            background-image: linear-gradient(to left top, #009dff, #00ebf9, #00ffe4);
+        }
+        #plabel{
+            background-color: #4700f9;
+            margin: 5px;
+            color: rgb(255, 255, 255);
+            padding: 0.3rem;
+            font-family: sans-serif;
+            border-radius: 0.3rem;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+        h2{
+            font-family: cursive;
+            margin: 4px 0px;
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <form action="/" method="post" autocomplete="off"><br>
+        <!-- <img src="C:\ShareData\form.png" alt="form" height="70px" width="100px"> -->
+        <h2>Profile Form</h2>
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="fname" required><br><br>
+        <label for="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lname" required><br><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="password">Password</label><br>
+        <input type="password" id="pass" name="pass" minlength="8" required><br><br>
+        <label for="dob">DOB</label><br>
+        <input type="date" name="date" id="date" required><br><br>
+        <label for="profile">Profile Image</label>
+        <label for="pimage" id="plabel">Choose File</label>
+        <input type="file" name="pimage" id="pimage" accept=".jpg,.jpeg,.png,.ico" hidden><br><br>
+        <label for="gender">Gender</label>
+        <select id="gender" name="gender">
+            <option style="font-weight: bold;" value="select" selected disabled>Select</option>
+            <option style="font-weight: bold;" value="Male">Red</option>
+            <option style="font-weight: bold;" value="Female">Blue</option>
+            <option style="font-weight: bold;" value="Others">Black</option>
+        </select><br>
+        <input type="checkbox" name="agree" id="agree" required>
+        <label for="agree" id="agr">Yes,I Agree with the policy.</label><br><br>
+        <button type="reset" id="reset">Reset</button>
+        <button type="submit" value="Submit">Submit</button><br><br>
+    </form>
+</body>
+</html>
